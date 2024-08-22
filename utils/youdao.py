@@ -2,9 +2,9 @@ import requests,json
 from .AuthV3Util import addAuthParams
 
 # 您的应用ID
-APP_KEY = '18643b5146016551'
+APP_KEY = '应用ID'
 # 您的应用密钥
-APP_SECRET = 'q08NaPSKt9ZpldNwv2CocRMzDPcHg3JQ'
+APP_SECRET = '密钥'
 
 class Youdao_Translation:
 
@@ -27,7 +27,6 @@ class Youdao_Translation:
     RETURN_NAMES = ("文本",)
 
     FUNCTION = "Translation"
-
 
     def Translation(self, text):
         q = text
