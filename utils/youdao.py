@@ -46,4 +46,3 @@ class Youdao_Translation:
             return (text_01)
         else:
             print(result)
-    
