@@ -40,6 +40,10 @@ class Youdao_Translation:
         res = requests.post('https://openapi.youdao.com/api', data, header)
         content_str = res.content.decode('utf-8')
         result = json.loads(content_str)
-        text_01 = result['translation'][0]
-        return (text_01)
+        if 'translation' in result:
+            text_01 = result['translation'][0]
+            print(result)
+            return (text_01)
+        else:
+            print(result)
     
