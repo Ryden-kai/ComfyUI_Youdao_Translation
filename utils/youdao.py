@@ -2,9 +2,9 @@ import requests,json
 from .AuthV3Util import addAuthParams
 
 # 您的应用ID
-APP_KEY = '应用ID'
+APP_KEY = '18643b5146016551'
 # 您的应用密钥
-APP_SECRET = '密钥'
+APP_SECRET = 'q08NaPSKt9ZpldNwv2CocRMzDPcHg3JQ'
 
 class Youdao_Translation:
 
@@ -41,8 +41,8 @@ class Youdao_Translation:
         content_str = res.content.decode('utf-8')
         result = json.loads(content_str)
         if 'translation' in result:
-            text_01 = result['translation'][0]
+            text = result['translation'][0]
             print(result)
-            return (text_01)
+            return (text,)
         else:
             print(result)
